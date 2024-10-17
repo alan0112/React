@@ -1,5 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
+//Importacion por default
+import MiComponente, { MiComponente3 } from './MiComponente.js';
+//Importación por nombre en este caso Fragment
+import { MiComponente2 } from './MiComponente.js';
+
 
 function App() {
   return (
@@ -9,15 +14,14 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+         {/*Esto te permite meter codigo JS como un comentario*/}
+      <MiComponente/>
+      <MiComponente2/>
+      <MiComponente3/>
       </header>
+
+     
+
     </div>
   );
 }
