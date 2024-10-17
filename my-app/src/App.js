@@ -5,9 +5,17 @@ import MiComponente, { MiComponente3 } from './MiComponente.js';
 //Importación por nombre en este caso Fragment
 import { MiComponente2 } from './MiComponente.js';
 import { Componente2 } from './Componente2.js';
+import { Componente3 } from './Componente3.js';
+
 
 
 function App() {
+
+  let medica ={
+    nombre :"a",
+    tipo_sanguineo: "o+",
+  }
+  
   return (
     <div className="App">
       <header className="App-header">
@@ -19,9 +27,15 @@ function App() {
       <div className='Componentes'>
       <MiComponente/>
       <MiComponente2/>
-      <MiComponente3/>
+      <MiComponente3
+      animal = "gato"
+      ficha = {medica}
+      />
       <hr/>
       <Componente2/>
+      <hr/>
+      <Componente3/>
+      
       </div>
       </header>
 
