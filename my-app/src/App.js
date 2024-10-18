@@ -14,7 +14,9 @@ function App() {
   let medica ={
     nombre :"a",
     tipo_sanguineo: "o+",
+    salud: "Shido",
   }
+  
   
   return (
     <div className="App">
@@ -27,14 +29,14 @@ function App() {
       <div className='Componentes'>
       <MiComponente/>
       <MiComponente2/>
-      <MiComponente3
-      animal = "gato"
-      ficha = {medica}
-      />
       <hr/>
       <Componente2/>
       <hr/>
-      <Componente3/>
+      <Componente3 
+        nombre = "alan" 
+        apellido = "apellido"
+        ficha = {medica}
+        />
       
       </div>
       </header>
