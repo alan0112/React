@@ -5,7 +5,7 @@ export const Componente3 = (/*props*/{nombre,apellido,ficha}) => {
     
   return (
     <div>
-        <h1>Comunicación entre componentes</h1>
+        <p>Comunicación entre componentes</p>
         <ul>
           <li>{/*props.*/nombre} </li>
           <li>{apellido} </li>

@@ -1,11 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-//Importacion por default
-import MiComponente, { MiComponente3 } from './MiComponente.js';
-//Importación por nombre en este caso Fragment
-import { MiComponente2 } from './MiComponente.js';
-import { Componente2 } from './Componente2.js';
 import { Componente3 } from './Componente3.js';
+import { EventosComponente } from './EventosComponente.js';
 
 
 
@@ -27,16 +23,13 @@ function App() {
         </p>
          {/*Esto te permite meter codigo JS como un comentario*/}
       <div className='Componentes'>
-      <MiComponente/>
-      <MiComponente2/>
-      <hr/>
-      <Componente2/>
-      <hr/>
+      
       <Componente3 
         nombre = "alan" 
         apellido = "apellido"
         ficha = {medica}
         />
+      <EventosComponente/>
       
       </div>
       </header>
